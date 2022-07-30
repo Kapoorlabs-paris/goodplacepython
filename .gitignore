@@ -1,5 +1,6 @@
 data/
 data_zenodo_npz/
+ImageNet/
 model/
 *.npz
 *.tif
