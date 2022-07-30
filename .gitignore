@@ -1,0 +1,7 @@
+data/
+model/
+*.npz
+*.tif
+*.hdf5
+*.hdf5*.png
+*.tfrecords
