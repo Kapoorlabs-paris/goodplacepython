@@ -7,13 +7,13 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
    
-<h2>  Django server to manage Classroom: Python for AI developers </h2>
+<h2>  Kapoorlabs projects </h2>
 
 <div class="row">
 {% for project in projects %}
 <div class="col-md-4">
     <div class="card mb-2">
-    <img class="card-img-top"  src="{% static project.image %}" alt = "Our Model">
+    <img class="card-img-top"  src="{% static project.image %}" alt = "Our Model" width = "100" >
     <div class="card-body">
         <h5 class="card-title">{{ project.title }}</h5>
         <p class="card-text">{{ project.description }}</p>
