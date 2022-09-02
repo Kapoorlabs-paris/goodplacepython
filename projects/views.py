@@ -6,5 +6,5 @@ from django.http import HttpResponse
 
 def project_list(request):
 
-     return render(request, 'django_app/index.html')
+     return render(request, 'projects/index.html')
 
