@@ -13,7 +13,6 @@
     <img class="card-img-top"  src="{% static project.image %}" alt = "{{ project.description }}">
     <div class="card-body">
         <h5 class="card-title">{{ project.title }}</h5>
-        <p class="card-text">{{ project.description }}</p>
         <p class="card-text">{{ project.technology }}</p>
         <a href="{% url 'projects:project_detail' project.pk %}"
         class="btn btn-primary">
