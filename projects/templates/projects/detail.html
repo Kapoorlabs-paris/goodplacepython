@@ -1,16 +1,19 @@
 {% extends 'projects/base.html' %}
+
+
 {% load static %}
+ 
 {% block content %}
-        <div class="col-md-4">
+<link rel="stylesheet" href="blog-layout.css" />
         <div class="card mb-2">
-        <img class="card-img-top"  src="{% static project.image %}" alt = "{{ project.description }}" >
+        <img class="card-img-top"  src="{% static project.image %}" alt = "{{ project.description }}"  >
+  
         <div class="card-body">
             <h5 class="card-title">{{ project.title }}</h5>
             <p class="card-text">{{ project.description }}</p>
             <p class="card-text">{{ project.technology }}</p>
            
-    </div>    
-    </div>
+        </div>
     </div>
     {% endblock %}
 
