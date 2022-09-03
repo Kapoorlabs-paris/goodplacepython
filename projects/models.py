@@ -7,7 +7,7 @@ class Project(models.Model):
     description = models.TextField()
     technology = models.CharField(max_length = 200)
     image = models.CharField(max_length = 1000)
-
+    authors = models.TextField(null=True)
  
 
    
