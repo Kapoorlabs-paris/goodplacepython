@@ -22,5 +22,6 @@ def project_detail(request, pk):
      return render(request,'projects/detail.html', {'project' : project} )
 
 def dashboard(request):
+    users = User.objects.all()
     
-    return render(request, 'projects/dashboard.html', {'User' : User})
+    return render(request, 'projects/dashboard.html', {'users' : users})
