@@ -9,5 +9,8 @@ class Project(models.Model):
     image = models.CharField(max_length = 1000)
     authors = models.TextField(null=True)
  
-
+class User(models.Model):
+    name = models.CharField(max_length = 1000)
+    role = models.TextField()
+    admin = models.BooleanField(False)
    
