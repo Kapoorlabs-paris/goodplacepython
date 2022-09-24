@@ -3,7 +3,8 @@
 {% load static %}
 {% block content %}
 
-Hello, {{ user.username|default:'Guest' }}!
+Hello, {{ user.username| default:'Guest' }}. You can login to view, transfer, run scripts on this server, 
+connect to other services you have access to (Jean Zay compute nodes, AWS EC2 instances, your AWS S3 buckets) 
 
 <div>
     {%if user.is_authenticated%}
