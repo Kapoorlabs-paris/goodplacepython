@@ -25,7 +25,7 @@ SECRET_KEY = '@iih%1707hbf-10fd1n#tyqdrm^b_4efos5ufz-w5et)*_smm5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kapoorlabs.ai']
+ALLOWED_HOSTS = ['127.0.0.1','kapoorlabs.ai']
 
 
 # Application definition
