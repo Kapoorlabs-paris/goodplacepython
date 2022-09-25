@@ -25,7 +25,7 @@ SECRET_KEY = '@iih%1707hbf-10fd1n#tyqdrm^b_4efos5ufz-w5et)*_smm5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['kapoorlabs.ai']
 
 
 # Application definition
@@ -124,8 +124,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 LOGIN_REDIRECT_URL = 'dashboard'
 
 LOGOUT_REDIRECT_URL = 'dashboard'
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
