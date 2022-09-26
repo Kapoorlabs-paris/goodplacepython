@@ -4,9 +4,12 @@ from django.db import models
 
 class Project(models.Model):
     title = models.CharField(max_length = 1000)
+    input_data_location = models.TextField(null=True)
+    input_script_location = models.TextField(null=True)
+    output_data_location = models.TextField(null=True) 
     description = models.TextField()
     technology = models.CharField(max_length = 200)
-    image = models.CharField(max_length = 1000)
+    image = models.TextField()
     authors = models.TextField(null=True)
  
 class User(models.Model):
