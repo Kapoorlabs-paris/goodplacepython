@@ -9,7 +9,7 @@ class Project(models.Model):
     output_data_location = models.TextField(null=True) 
     description = models.TextField()
     technology = models.CharField(max_length = 200)
-    image = models.TextField()
+    image = models.CharField(max_length = 100)
     authors = models.TextField(null=True)
  
 class User(models.Model):

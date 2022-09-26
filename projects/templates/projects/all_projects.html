@@ -9,10 +9,9 @@
 
 <div class="row">
 {% for project in projects %}
-    {% static project.image %} 
     <div class="col-md-4">
     <div class="card mb-2">
-        <img class="card-img-top"  src="{% static project.image %}" alt = " " >
+    <img class="card-img-top"  src="{% static project.image %}" alt = " " >
     <div class="card-body">
         <h5 class="card-title">{{ project.title }}</h5>
         <p class="card-text">{{ project.technology }}</p>
