@@ -5,8 +5,10 @@ from projects.models import Project, User
 from django.contrib.auth import login 
 from django.urls import reverse 
 from projects.forms import CustomUserCreationForm
+import markdown
 # Create your views here.
 
+md = markdown.Markdown()
 
 def project_list(request):
 
@@ -16,12 +18,14 @@ def all_projects(request):
 
      # query the database to return all project objects
      projects = Project.objects.all()
+   
      return render(request, 'projects/all_projects.html', {'projects' : projects})
 
 
 def project_detail(request, pk):
      
      project = Project.objects.get(pk=pk)
+     
      return render(request,'projects/detail.html', {'project' : project} )
 
 def dashboard(request):

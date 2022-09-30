@@ -1,10 +1,11 @@
 from django.db import models
-
+import markdown
 from markdownfield.models import MarkdownField, RenderedMarkdownField
 from markdownfield.validators import VALIDATOR_STANDARD
 # Create your models here.
 
 class Project(models.Model):
+    md = markdown.Markdown()
     title = models.CharField(max_length = 1000)
     input_data_location = models.TextField(null=True)
     input_script_location = models.TextField(null=True)
