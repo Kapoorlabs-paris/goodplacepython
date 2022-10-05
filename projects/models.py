@@ -1,11 +1,8 @@
 from django.db import models
-import markdown
-from markdownfield.models import MarkdownField, RenderedMarkdownField
-from markdownfield.validators import VALIDATOR_STANDARD
+
 # Create your models here.
 
 class Project(models.Model):
-    md = markdown.Markdown()
     title = models.CharField(max_length = 1000)
     input_data_location = models.TextField(null=True)
     input_script_location = models.TextField(null=True)
@@ -15,9 +12,9 @@ class Project(models.Model):
     image = models.CharField(max_length = 100)
     authors = models.TextField(null=True)
  
-class User(models.Model):
-    name = models.CharField(max_length = 1000)
-    role = models.TextField()
-    admin = models.BooleanField(False)
-    country = models.CharField(max_length = 1000, null = True)
+class Classroomprojects(models.Model):
+    title = models.CharField(max_length = 1000)
+    syllabus = models.TextField(null=True)
+    instructors = models.TextField(null=True)
+    students = models.TextField(null=True)
    

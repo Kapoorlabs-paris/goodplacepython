@@ -18,10 +18,12 @@ from projects import views
 
 urlpatterns = [
     path('projects/',views.all_projects, name = 'all_projects'),
+    path('classprojects/',views.classroom_projects, name = 'classprojects'),
     path('dashboard/', views.dashboard, name = 'dashboard'),
     path('', views.dashboard, name = 'dashboard'),
     path('accounts/', include('django.contrib.auth.urls')),
-    path('<int:pk>', views.project_detail, name = 'project_detail'),
+    path('project_<int:pk>', views.project_detail, name = 'project_detail'),
+    path('class_<int:pk>', views.class_project_detail, name = 'class_project_detail'),
     path('register/', views.register, name = 'register'),
 
 ]
