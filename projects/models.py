@@ -1,5 +1,4 @@
 from django.db import models
-
 # Create your models here.
 
 class Project(models.Model):
@@ -18,3 +17,5 @@ class Classroomprojects(models.Model):
     instructors = models.TextField(null=True)
     students = models.TextField(null=True)
    
+import json 
+
